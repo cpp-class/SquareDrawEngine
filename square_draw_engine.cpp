@@ -41,7 +41,18 @@ void sd_rectangle(int x, int y, int sq_size, int sq_space, int width, int height
 
 void sd_frame(int x, int y, int sq_size, int sq_space, int width, int height, Color color)
 {
+	int step {sq_size + sq_space};
 
+	sd_horizontal_line(x, y, sq_size, sq_space, width, color);
+	sd_horizontal_line(x, y + (height-1)*step, sq_size, sq_space, width, color);
+
+	sd_vertical_line(x, y, sq_size, sq_space, height, color);
+	sd_vertical_line(x + (width-1)*step, y, sq_size, sq_space, height, color);
 }
 
+
+void sd_payramid(int x, int y, int sq_size, int sq_space, int height, Color color)
+{
+
+}
 

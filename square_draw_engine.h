@@ -11,4 +11,5 @@ void sd_rectangle(int x, int y, int sq_size, int sq_space, int width, int height
 
 void sd_frame(int x, int y, int sq_size, int sq_space, int width, int height, Color color);
 
+void sd_payramid(int x, int y, int sq_size, int sq_space, int height, Color color);
 #endif /* SQUARE_DRAW_ENGINE_H_ */

@@ -30,7 +30,7 @@ int main(void)
     	if (IsKeyPressed(KEY_SPACE))
     	{
     		cur_draw++;
-    		if (cur_draw>=4) {
+    		if (cur_draw>4) {
     			cur_draw = 0;
     		}
     	}
@@ -72,12 +72,12 @@ int main(void)
 
             if (cur_draw == 4)
             {
-                sd_frame(50, 100, 20, 5, 15, 4, BLUE);
+                sd_payramid(300, 100, 20, 5, 10, GREEN);
 
-                put_text("sd_frame (50, 100, 20, 5, 15, 4, BLUE)", 30, screen_width, 25, BLACK);
+                put_text("sd_payramid(300, 100, 20, 5, 10, GREEN)", 30, screen_width, 25, BLACK);
             }
 
-            DrawText("Press space...",50 , screen_height - 60, 40, LIGHTGRAY);
+            DrawText("Press space ...", 50 , screen_height - 60, 40, LIGHTGRAY);
 
             //DrawFPS(10, 10);
 
